@@ -79,6 +79,7 @@
                 <move todir="${destDir}">
                   <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}">
                     <include name="**/*.*"/>
+                    <exclude name="client/"/>
                   </fileset>
                 </move>
               </target>
