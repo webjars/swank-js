@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>swank-js</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <name>swank-js</name>
   <description>WebJar for swank-js</description>
   <url>http://webjars.org</url>
@@ -32,7 +32,7 @@
     <url>http://github.com/webjars/swank-js</url>
     <connection>scm:git:https://github.com/webjars/swank-js.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/swank-js.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>swank-js-0.0.3</tag>
   </scm>
   
   <properties>
@@ -73,13 +73,13 @@
             <configuration>
               <target>
                 <echo message="make tmp dir..." />
-                <mkdir dir="${destDir}"/>
+                <mkdir dir="${destDir}" />
                 <echo message="unzip archive..." />
                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                 <move todir="${destDir}">
                   <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}">
-                    <include name="**/*.*"/>
-                    <exclude name="client/"/>
+                    <include name="**/*.*" />
+                    <exclude name="client/" />
                   </fileset>
                 </move>
               </target>
