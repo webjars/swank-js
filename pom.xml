@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>swank-js</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>swank-js</name>
   <description>WebJar for swank-js</description>
   <url>http://webjars.org</url>
@@ -32,7 +32,7 @@
     <url>http://github.com/webjars/swank-js</url>
     <connection>scm:git:https://github.com/webjars/swank-js.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/swank-js.git</developerConnection>
-    <tag>swank-js-0.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
   
   <properties>
